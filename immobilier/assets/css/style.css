@@ -1,0 +1,72 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #000;
+    overflow: hidden;
+  }
+  
+  .video-container {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  video {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+  }
+  
+  .nav-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 3rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px;
+    border-radius: 50%;
+    text-decoration: none;
+    z-index: 1000;
+  }
+  
+  .left-arrow { left: 10px; }
+  .right-arrow { right: 10px; }
+  
+  .overlay-icons {
+    position: absolute;
+    right: 20px;
+    bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    z-index: 1000;
+  }
+  
+  .overlay-icons i {
+    font-size: 2rem;
+    color: white;
+  }
+  
+  .overlay-icons .count {
+    font-size: 0.9rem;
+    color: white;
+  }
+  
+  .user-info {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    font-weight: bold;
+    z-index: 1000;
+  }
+  
+  .user-info i {
+    margin-right: 5px;
+  }
